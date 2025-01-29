@@ -20,3 +20,19 @@ int main(){
 
 //Do not modify the code above this line
 //Write definition of shuffle() using pointer after this line. 
+void shuffle(int *a, int *b, int *c, int *d) {
+    int *num[] = {a, b, c, d}; 
+    
+    for (int i = 0; i < 4; i++) {
+        int random = rand() % 4; 
+         int temp = *num[i];
+         *num[i] = *num[random];
+         *num[random] = temp;
+    }
+
+    // นำค่าที่ถูกสลับกลับไปยังตัวแปร a, b, c, d
+    a = num[0];
+    b = num[1];
+    c = num[2];
+    d = num[3];
+}
