@@ -28,8 +28,7 @@ void shuffle(int &a, int &b, int &c, int &d) {
          num[i] = num[random];
          num[random] = temp;
     }
-
-    // นำค่าที่ถูกสลับกลับไปยังตัวแปร a, b, c, d
+	
     a = num[0];
     b = num[1];
     c = num[2];
